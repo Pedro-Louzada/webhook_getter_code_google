@@ -19,9 +19,7 @@ export function webhookRoutes(server: FastifyInstance) {
                     state
                 })
 
-                console.log(dataUser);
-
-                return reply.redirect('https://w.app/zp025n')
+                return reply.redirect('https://w.app/zp025n').send(dataUser)
             }
 
             return reply.send(body)
