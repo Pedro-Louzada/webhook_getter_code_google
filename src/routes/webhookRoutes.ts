@@ -7,7 +7,7 @@ interface IQuery {
 
 export function webhookRoutes(server: FastifyInstance) {
     server.get(
-        '/callback',
+        '/',
         async (request: FastifyRequest<{ Querystring: IQuery }>, reply) => {
             const { query, body } = request;
 
